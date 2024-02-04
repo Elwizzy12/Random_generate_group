@@ -48,9 +48,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages  # Change this to your GitHub Pages branch
-          folder: .  # Change this to the folder containing your Dockerfile and other necessary files
